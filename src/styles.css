@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Red hat';
+    src: url('/public/fonts/RedHatText-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Red hat italic';
+    src: url('/public/fonts/RedHatText-Italic-VariableFont_wght.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+.container{
+    width: 1216px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 32px;    
+    margin: auto;
+}
+
+body{
+    margin: 0px;
+    padding: 88px 0px;
+    background-color: var(--color-rose-50, #FCF8F6);
+}
+
+:root{
+    --font: 'red hat';
+    --font-italic: 'Red hat italic';
+}
+
+@media(max-width: 1280px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    body{
+        padding-top: 40px;
+    }
+}
+
+@media(max-width: 600px){
+    body{
+        padding-top: 24px;
+    }
+}
